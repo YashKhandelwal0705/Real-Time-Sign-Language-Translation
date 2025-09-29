@@ -118,4 +118,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Yash Khandelwal - [GitHub](https://github.com/YashKhandelwal0705)
 
-Project Link: [https://github.com/YashKhandelwal0705/Real-Time-Sign-Language-Translation](https://github.com/YashKhandelwal0705/Real-Time-Sign-Language-Translation)
+Project Link: [https://github.com/YashKhandelwal0705/Sign-Language-Translation-System](https://github.com/YashKhandelwal0705/Sign-Language-Translation-System)
