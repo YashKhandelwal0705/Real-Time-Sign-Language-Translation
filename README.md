@@ -25,8 +25,8 @@ A real-time Sign Language Translation system that converts hand gestures into te
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YashKhandelwal0705/Sign-Language-Translation-System.git
-cd Sign-Language-Translation-System
+git clone https://github.com/YashKhandelwal0705/Real-Time-Sign-Language-Translation.git
+cd Real-Time-Sign-Language-Translation
 ```
 
 2. Create and activate virtual environment:
@@ -42,11 +42,17 @@ source venv/bin/activate   # Unix/Linux
 pip install -r requirements.txt
 ```
 
+4. Train the model (required):
+```bash
+python "Python Files/train.py"
+```
+This will create the necessary model file at `runs/detect/train/weights/best.pt`
+
 ## 🚀 Usage
 
 1. Run the Flask application:
 ```bash
-python "Flask App/app.py"
+python app.py
 ```
 
 2. Open your web browser and navigate to:
@@ -59,20 +65,22 @@ http://127.0.0.1:5000/
 ## 📁 Project Structure
 
 ```
-Sign-Language-Translation-System/
-├── Flask App/             # Web application
-│   ├── app.py            # Main Flask application
-│   └── templates/        # HTML templates
-├── Python Files/         # Core Python scripts
-│   ├── Yolo.py          # YOLO model implementation
+Real-Time-Sign-Language-Translation/
+├── app.py               # Main Flask application
+├── templates/           # HTML templates
+│   └── index.html      # Web interface
+├── Python Files/       # Core Python scripts
+│   ├── Yolo.py         # YOLO model implementation
 │   ├── Feature Extraction.py  # Data preprocessing
-│   ├── train.py         # Model training script
-│   └── ...              # Other utility scripts
-├── Dataset/             # Training dataset
-├── runs/               # Model training outputs
+│   ├── train.py        # Model training script
+│   ├── Hand Detector.py # Hand detection utilities
+│   └── ...             # Other utility scripts
 ├── requirements.txt    # Python dependencies
 ├── README.md          # Project documentation
+├── setup.py           # Package setup
 └── LICENSE            # License file
+
+Note: Dataset/ and runs/ folders are not included in the repository due to size constraints.
 ```
 
 ## 🎯 How it Works
@@ -110,4 +118,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Yash Khandelwal - [GitHub](https://github.com/YashKhandelwal0705)
 
-Project Link: [https://github.com/YashKhandelwal0705/Sign-Language-Translation-System](https://github.com/YashKhandelwal0705/Sign-Language-Translation-System)
+Project Link: [https://github.com/YashKhandelwal0705/Real-Time-Sign-Language-Translation](https://github.com/YashKhandelwal0705/Real-Time-Sign-Language-Translation)

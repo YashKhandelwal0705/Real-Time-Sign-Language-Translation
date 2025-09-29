@@ -1,3 +1,15 @@
+# Virtual Environment
+venv/
+env/
+.env
+
+# Dataset (large training data - not needed on GitHub)
+Dataset/
+
+# Trained models (large files - users should train their own)
+runs/
+*.pt
+
 # Python
 __pycache__/
 *.py[cod]
@@ -20,84 +32,18 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-env/
-.yolo-env/
-
-# IDE
-.idea/
+# IDEs
 .vscode/
+.idea/
 *.swp
 *.swo
 
-# Project specific
-/runs/
-/weights/
-/Dataset/
+# OS
+.DS_Store
+Thumbs.db
+
+# Training artifacts (optional - you can keep these if needed)
+# runs/
 
 # Logs
 *.log
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Local development
-.local
-
-# Windows
-Thumbs.db
-.DS_Store
-
-# Large files
-*.pt
-*.pth
-*.weights
-*.bin
-*.model
-
-# Model checkpoints
-*.ckpt
-*.pt
-*.pth
-*.weights
-*.bin
-*.model
-
-# Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-coverage.xml
-*.cover
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# GitHub
-.github/workflows/
-.github/ISSUE_TEMPLATE/
-.github/PULL_REQUEST_TEMPLATE/

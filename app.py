@@ -14,7 +14,7 @@ cap = cv2.VideoCapture(0)
 cap.set(3,640)
 cap.set(4,480)
 
-model = YOLO(r"f:\Projects\SLT-main\runs\detect\train\weights\best.pt")
+model = YOLO("runs/detect/train/weights/best.pt")
 
 classNames = ["A", "F", "L", "Y"]
 offset = 20
@@ -97,4 +97,3 @@ def video_feed():
 
 if __name__ == "__main__":
     app.run(debug = True)
- 
